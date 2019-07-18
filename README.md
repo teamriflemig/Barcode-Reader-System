@@ -12,6 +12,7 @@ Created By:
 * https://www.facebook.com/xXShonenXx
 
 How To Use:
-a. Import the database into the mysql datable.
-b. Copy Barcode folder into htdocs in Xammp folder.
-c. Run in the browser with localhost/barcode/LoginSys.php
+a. Extract koolreport_example.zip
+b. Import the database into the mysql datable.
+c. Copy Barcode folder into htdocs in Xammp folder.
+d. Run in the browser with localhost/barcode/LoginSys.php
