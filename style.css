@@ -1,0 +1,101 @@
+body{
+    background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(bglogin.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+.login-box{
+    max-width: 700px;
+    float: none;
+    margin: 150px auto;
+}
+
+.login-center{
+  background: rgba(211,211,211,0.5);
+  padding:30px;
+}
+
+.radioContainer{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+    padding-left: 30px;
+}
+
+.radioContainer input{
+  display: none;
+}
+.radioContainer .circle{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #eee;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+
+.radioContainer:hover .circle{
+  background-color: #ccc;
+}
+
+.radioContainer input:checked + .circle{
+  background-color: #2196fc;
+}
+
+.radioContainer input:checked + .circle::after{
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  left: 26%;
+  top:25%;
+  transition: translate(-50%,-50%);
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+}
